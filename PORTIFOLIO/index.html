@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/ChatGPT Image 2 de jun. de 2025, 16_39_25.png" alt="logo" id="logo-placeholden">
+            </div>
+            <nav>
+                <ul>
+                    <li><a heref='#'>Início</a></li>
+                    <li><a heref='#'>Portfolio</a></li>
+                    <li><a heref='#'>Cadastro</a></li>
+                    <li><a heref='#'>Sobre</a></li>
+                </ul>
+            </nav>
+    
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-conteudo">
+                <h2>Salve</h2>
+                <p>Compartilhe seus projetos e conquistas acadêmicas do senai</p>
+                <a href="#cadastro" class="botao">Cadastre seu Portfólio</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="titulo-secao">Portfólio em Destaque</h2>
+            <div class="portfolio-grid">
+                    <!-- Portfólios serão carregados via Javascript-->
+            </div>
+        </div>
+    </section>
+
+    <section id="cadastro" class="cadastro">
+        <div class="container">
+            <h2 class="titulo-secao">Cadastre seu Portfólio</h2>
+            <form id="formulario-portfolio">
+                <div class="formulario-grupo">
+                    <label for="nome">Nome Completo</label>
+                    <label type="text" id="nome" name="nome" required></label>
+                    <span class="erro-mensagem" id="nome-erro"></span>
+                </div>
+                <div class="formulario-grupo">
+                    <label for="email">Email</label>
+                    <label type="email" id="email" name="email" required></label>
+                    <span class="erro-mensagem" id="email-erro"></span>
+                </div>
+                <div class="formulario-grupo">
+                    <label for="curso">Curso</label>
+                    <select name="curso" id="curso" required>
+                        <option value="">Selecione um curso</option>
+                        <option value="Técnico em Desenvolvimento de Sistemas">Técnico em Desenvolvimento de Sistemas</option>
+                        <option value="Técnico em Mecatrônica">Técnico em Mecatrônica</option>
+                        <option value="Técnico em Automação Industrial">Técnico em Automação Industrial</option>
+                        <option value="Técnico em projetos de MAKER no FabLab">Técnico em projetos de MAKER no FabLab</option>
+                        <option value="outro">Outro</option>
+                        <span class="erro-mensagem" id="curso-erro">
+                        </span>
+                    </select>
+                </div>
+                <div class="formulario-grupo" id="outro-curso-container" style="display: none"></div>
+                    <label for="outro-curso">Especifique</label>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
