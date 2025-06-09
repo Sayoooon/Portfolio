@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -15,13 +17,14 @@
             </div>
             <nav>
                 <ul>
-                    <li><a heref='#'>Início</a></li>
-                    <li><a heref='#'>Portfolio</a></li>
-                    <li><a heref='#'>Cadastro</a></li>
-                    <li><a heref='#'>Sobre</a></li>
+                    <li> <a href='#'>Início</a></li>
+                    <li> <a href='#'>Portfolio</a></li>
+                    <li> <a href='#'>Cadastro</a></li>
+                    <li> <a href='#'>Sobre</a></li>
+                    <li> <a href='https://www.instagram.com/sayon_kl/?next=%2F'>Instagram</a></li>
                 </ul>
             </nav>
-    
+
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
@@ -42,7 +45,7 @@
         <div class="container">
             <h2 class="titulo-secao">Portfólio em Destaque</h2>
             <div class="portfolio-grid">
-                    <!-- Portfólios serão carregados via Javascript-->
+                <!-- Portfólios serão carregados via Javascript-->
             </div>
         </div>
     </section>
@@ -53,12 +56,12 @@
             <form id="formulario-portfolio">
                 <div class="formulario-grupo">
                     <label for="nome">Nome Completo</label>
-                    <label type="text" id="nome" name="nome" required></label>
+                    <input type="text" id="nome" name="nome" required>
                     <span class="erro-mensagem" id="nome-erro"></span>
                 </div>
                 <div class="formulario-grupo">
                     <label for="email">Email</label>
-                    <label type="email" id="email" name="email" required></label>
+                    <input type="email" id="email" name="email" required>
                     <span class="erro-mensagem" id="email-erro"></span>
                 </div>
                 <div class="formulario-grupo">
@@ -75,9 +78,10 @@
                     </select>
                 </div>
                 <div class="formulario-grupo" id="outro-curso-container" style="display: none"></div>
-                    <label for="outro-curso">Especifique</label>
+                <label for="outro-curso">Especifique</label>
             </form>
         </div>
     </section>
 </body>
+
 </html>
